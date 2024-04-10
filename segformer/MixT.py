@@ -10,8 +10,6 @@ from functools import partial
 
 from timm.models.layers import DropPath, to_2tuple, trunc_normal_
 
-#from mmseg.utils import get_root_logger
-#from mmcv.runner import load_checkpoint
 import math
 
 
