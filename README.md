@@ -49,3 +49,22 @@ datasets/
 | SegFormer-B1 | 50.19 | [model](https://drive.google.com/file/d/1OjIS5txbyy2JJZ8_hVQVS0dosJJ7T75S/view?usp=drive_link) |  
 | SegFormer-B2 | 52.99 | [model](https://drive.google.com/file/d/1g0EvvpYDEBWaTKynKbcUK8OPkfqVHFHk/view?usp=drive_link) |
 
+## Evaluation
+Download the pretrained weights from GoogleDirve.
+
+```
+Sbatch val.sh
+```
+## References
+We appreciate the previous open-source works: [Trans4PASS](https://github.com/jamycheung/Trans4PASS) / [SegFormer](https://github.com/NVlabs/SegFormer)
+
+## Citations
+If you are interested in this work, please cite the following works:
+```
+@article{zheng2024semantics,
+  title={Semantics, Distortion, and Style Matter: Towards Source-free UDA for Panoramic Segmentation},
+  author={Zheng, Xu and Zhou, Pengyuan and Vasilakos, Athanasios and Wang, Lin},
+  journal={arXiv preprint arXiv:2403.12505},
+  year={2024}
+}
+```
