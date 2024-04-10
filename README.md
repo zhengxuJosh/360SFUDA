@@ -9,3 +9,43 @@
 ## Environments
 ```
 pip install -r requirements.txt
+```
+
+## Data Preparation
+Used Datasets: 
+[Cityscapes](https://www.cityscapes-dataset.com/) / [DensePASS](https://github.com/chma1024/DensePASS) / [SynPASS](https://drive.google.com/file/d/1u-5J13CD6MXpWB53apB-L6kZ3hK1JR77/view?usp=sharing) / [Stanford2D3D](https://arxiv.org/abs/1702.01105)
+
+```
+datasets/
+├── cityscapes
+│   ├── gtFine
+│   └── leftImg8bit
+├── Stanford2D3D
+│   ├── area_1
+│   ├── area_2
+│   ├── area_3
+│   ├── area_4
+│   ├── area_5a
+│   ├── area_5b
+│   └── area_6
+├── SynPASS
+│   ├── img
+│   │   ├── cloud
+│   │   ├── fog
+│   │   ├── rain
+│   │   └── sun
+│   └── semantic
+│       ├── cloud
+│       ├── fog
+│       ├── rain
+│       └── sun
+├── DensePASS
+│   ├── gtFine
+│   └── leftImg8bit
+```
+## Pre-trained Weights of 360SFUDA++
+| BackBone  | Outdoor C-to-D | Indoor Spin-to-Span |
+|--------|--------|--------|
+| SegFormer-B1 | 50.19 [model](https://drive.google.com/file/d/1OjIS5txbyy2JJZ8_hVQVS0dosJJ7T75S/view?usp=drive_link) |  |
+| SegFormer-B2 | | 68.84 [model](https://drive.google.com/file/d/1IlsHVsInhPzu3c8qdyKnlQpEKXkzcP-J/view?usp=drive_link) |
+
