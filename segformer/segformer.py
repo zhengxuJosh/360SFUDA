@@ -3,7 +3,6 @@ import torch.nn as nn
 import torch.nn.functional as F 
 from .seghead import SegFormerHead
 from . import MixT
-#from .MixT_nat import mit_nat_b1, mit_nat_b2, mit_nat_b0
 
 class Seg(nn.Module):
     def __init__(self, backbone, num_classes=20, embedding_dim=256, pretrained=None):
@@ -12,50 +11,24 @@ class Seg(nn.Module):
         self.embedding_dim = embedding_dim
         self.feature_strides = [4, 8, 16, 32]
 
-        if backbone == 'mit_nat_b0':
-            self.encoder = mit_nat_b0()
-            if pretrained:
-                state_dict = torch.load('/hpc/users/CONNECT/xuzheng/mit_b0.pth')
-                state_dict.pop('head.weight')
-                state_dict.pop('head.bias')
-                self.encoder.load_state_dict(state_dict,strict=False)
-        ## initilize encoder
-        elif backbone == 'mit_nat_b1':
-            self.encoder = mit_nat_b1()
-            if pretrained:
-                state_dict = torch.load('/hpc/users/CONNECT/xuzheng/mit_b1.pth')
-                state_dict.pop('head.weight')
-                state_dict.pop('head.bias')
-                self.encoder.load_state_dict(state_dict,strict=False)
-        ## initilize encoder
-        elif backbone == 'mit_nat_b2':
-            self.encoder = mit_nat_b2()
-            if pretrained:
-                state_dict = torch.load('/hpc/users/CONNECT/xuzheng/omni_seg/code/models/ptmodel/mit_b2.pth')
-                state_dict.pop('head.weight')
-                state_dict.pop('head.bias')
-                self.encoder.load_state_dict(state_dict,strict=False)
-        else:
-            self.encoder = getattr(MixT, backbone)()
-        self.in_channels = self.encoder.embed_dims
         ## initilize encoder
         if backbone == 'mit_b0':
             if pretrained:
                 print("no pre")
-                # state_dict = torch.load('/hpc/users/CONNECT/xuzheng/workplace/mit_b0.pth')
+                # state_dict = torch.load('/mit_b0.pth')
                 # state_dict.pop('head.weight')
                 # state_dict.pop('head.bias')
                 # self.encoder.load_state_dict(state_dict,strict=False)
         if backbone == 'mit_b1':
             if pretrained:
                 print("no pre")
-                state_dict = torch.load('/hpc2hdd/home/xzheng287/360Seg/DPPASS/models/segformer/mit_b1.pth')
+                state_dict = torch.load('/mit_b1.pth')
                 state_dict.pop('head.weight')
                 state_dict.pop('head.bias')
                 self.encoder.load_state_dict(state_dict,)
         if backbone == 'mit_b2':
             if pretrained:
-                state_dict = torch.load('/hpc2hdd/home/xzheng287/360Seg/DPPASS/models/segformer/mit_b2.pth')
+                state_dict = torch.load('/mit_b2.pth')
                 state_dict.pop('head.weight')
                 state_dict.pop('head.bias')
                 self.encoder.load_state_dict(state_dict,strict=False)
