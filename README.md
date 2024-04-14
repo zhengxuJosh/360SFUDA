@@ -6,7 +6,7 @@
 [360SFUDA++: Towards Source-free UDA for Panoramic Segmentation with Reliable Prototypical Adaptation](), Arxiv 2024. 
 
 ## Update
-[04/2024], pre-trained wegiths and evalutation code on C-to-D scenario for 360SFUDA++ is released.
+[04/2024], pre-trained weights and evalutation code on C-to-D scenario for 360SFUDA++ are released.
 
 
 ## Environments
