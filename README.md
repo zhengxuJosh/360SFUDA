@@ -11,6 +11,12 @@
 
 ## Environments
 ```
+conda create -n pano python=3.9
+```
+```
+conda activate pano
+```
+```
 pip install -r requirements.txt
 ```
 
