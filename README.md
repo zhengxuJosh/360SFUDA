@@ -53,10 +53,10 @@ datasets/
 | SegFormer-B2 | 52.99 | [model](https://drive.google.com/file/d/1g0EvvpYDEBWaTKynKbcUK8OPkfqVHFHk/view?usp=drive_link) |
 
 ## Evaluation
-Download the pretrained weights from GoogleDirve.
+Download the pretrained weights in C-to-D scenarios from GoogleDirve.
 
 ```
-python val.py
+python val_city.py
 ```
 ## References
 We appreciate the previous open-source works: [Trans4PASS](https://github.com/jamycheung/Trans4PASS) / [SegFormer](https://github.com/NVlabs/SegFormer)
