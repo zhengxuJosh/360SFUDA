@@ -71,7 +71,15 @@ If you are interested in this work, please cite the following works:
 @article{zheng2024semantics,
   title={Semantics, Distortion, and Style Matter: Towards Source-free UDA for Panoramic Segmentation},
   author={Zheng, Xu and Zhou, Pengyuan and Vasilakos, Athanasios and Wang, Lin},
-  journal={arXiv preprint arXiv:2403.12505},
+  journal={CVPR 2024},
+  year={2024}
+}
+```
+```
+@article{360SFUDA++,
+  title={360SFUDA++: Towards Source-free UDA for Panoramic Segmentation by Learning Reliable Category Prototypes},
+  author={Zheng, Xu and Zhou, Pengyuan and Vasilakos, Athanasios and Wang, Lin},
+  journal={arXiv},
   year={2024}
 }
 ```
