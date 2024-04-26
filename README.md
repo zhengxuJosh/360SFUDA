@@ -3,8 +3,7 @@
 [Semantics, Distortion, and Style Matter: Towards Source-free UDA for Panoramic Segmentation](https://arxiv.org/pdf/2403.12505), CVPR 2024.
 <img width="612" alt="image" src="https://github.com/zhengxuJosh/360SFUDA/assets/49426295/6962a1a0-7fb8-49ce-a895-2d9bb1b1449b">
 
-[360SFUDA++: Towards Source-free UDA for Panoramic Segmentation with Reliable Prototypical Adaptation](), Arxiv 2024. 
-![image](https://github.com/zhengxuJosh/360SFUDA/assets/49426295/bd1e5dce-dfa6-4b89-9c57-27a7b17b04b1)
+[360SFUDA++: Towards Source-free UDA for Panoramic Segmentation with Reliable Prototypical Adaptation](https://arxiv.org/pdf/2404.16501), Arxiv 2024. 
 
 ## Update
 [04/2024], pre-trained weights and evalutation code on C-to-D scenario for 360SFUDA++ are released.
